@@ -20,6 +20,9 @@ public class FileManager implements FileHandler {
 
     @Override
     public void saveData() {
+
+        //temp debug to check where the file is being saved
+        System.out.println("DEBUG: Saving to -> " + new File(DATA_FILE).getAbsolutePath());
         // PrintWriter makes it easy to write formatted text strings
         try (PrintWriter writer = new PrintWriter(new FileWriter(DATA_FILE))) {
             // Write the CSV Header
