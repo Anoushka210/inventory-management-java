@@ -12,6 +12,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class InventoryManager {
     private Map<Integer, Product> inventoryMap;
     private double totalSales;
@@ -54,7 +57,6 @@ public class InventoryManager {
             throw new OutOfStockException(" Product not found!");
         }
         
-        // Synchronized block to prevent two threads selling the last item
         synchronized (product) {
             if (product.getQuantity() < quantity) {
                 throw new OutOfStockException(" Insufficient stock! Available: " + product.getQuantity());
@@ -63,6 +65,14 @@ public class InventoryManager {
             double saleAmount = quantity * product.getPrice();
             totalSales += saleAmount;
             System.out.println(" Sale successful! Remaining quantity: " + product.getQuantity());
+
+            // --- NEW LOGGING LOGIC ---
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+            String timestamp = LocalDateTime.now().format(formatter);
+            String logEntry = String.format("[%s] SOLD: %d units of %s (ID: %d) for ₹%.2f. Total Sale: ₹%.2f",
+                    timestamp, quantity, product.getName(), product.getId(), product.getPrice(), saleAmount);
+            
+            fileManager.appendLog(logEntry); // Save it to the text file
         }
     }
 
