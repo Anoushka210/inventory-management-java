@@ -13,7 +13,7 @@ public class FileManager implements FileHandler {
     // Changed from .dat to .csv
     private static final String DATA_FILE = "inventory.csv"; 
     private static final String REPORT_FILE = "report.txt";
-
+    private static final String LOG_FILE = "transaction_log.txt";
     public FileManager(Map<Integer, Product> inventoryMap) {
         this.inventoryMap = inventoryMap;
     }
@@ -90,6 +90,15 @@ public class FileManager implements FileHandler {
             System.out.println(" Report generated and saved to '" + REPORT_FILE + "'");
         } catch (IOException e) {
             System.out.println(" Error saving report: " + e.getMessage());
+        }
+    }
+
+    public void appendLog(String logMessage) {
+        // The "true" parameter here is the magic! It tells Java to APPEND, not overwrite.
+        try (PrintWriter writer = new PrintWriter(new FileWriter(LOG_FILE, true))) {
+            writer.println(logMessage);
+        } catch (IOException e) {
+            System.out.println(" Error saving log: " + e.getMessage());
         }
     }
 }
