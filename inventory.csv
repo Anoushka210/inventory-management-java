@@ -1,31 +1,4 @@
 Type,ID,Name,Price,Quantity,ExtraInfo
-Perishable,101,Milk,45.00,15,20-10-2025
-NonPerishable,102,Sugar,55.00,4,N/A
-NonPerishable,103,Tea Leaves,120.00,2,N/A
-Perishable,104,Yogurt,35.00,25,30-10-2025
-Perishable,105,Maggie,20.00,18,06-04-2026
-Perishable,106,Bread,30.00,20,10-04-2026
-Perishable,107,Butter,60.00,10,15-04-2026
-NonPerishable,108,Rice,80.00,50,N/A
-NonPerishable,109,Wheat Flour,45.00,35,N/A
-Perishable,110,Paneer,90.00,12,12-04-2026
-Perishable,111,Cheese,110.00,8,18-04-2026
-NonPerishable,112,Salt,20.00,25,N/A
-NonPerishable,113,Turmeric Powder,70.00,10,N/A
-NonPerishable,114,Chili Powder,85.00,9,N/A
-Perishable,115,Tomato,25.00,40,08-04-2026
-Perishable,116,Potato,20.00,60,20-04-2026
-Perishable,117,Onion,30.00,45,18-04-2026
-NonPerishable,118,Toor Dal,95.00,22,N/A
-NonPerishable,119,Moong Dal,100.00,18,N/A
-NonPerishable,120,Chana Dal,85.00,20,N/A
-Perishable,121,Spinach,15.00,30,07-04-2026
-Perishable,122,Cabbage,25.00,20,12-04-2026
-Perishable,123,Carrot,40.00,25,14-04-2026
-Perishable,124,Cucumber,20.00,28,09-04-2026
-NonPerishable,125,Cooking Oil,150.00,15,N/A
-NonPerishable,126,Ghee,500.00,5,N/A
-Perishable,127,Chicken,220.00,10,07-04-2026
 Perishable,128,Eggs,6.00,120,15-04-2026
 Perishable,129,Apple,120.00,30,16-04-2026
 Perishable,130,Banana,50.00,35,10-04-2026
@@ -49,3 +22,30 @@ Perishable,147,Pineapple,90.00,8,13-04-2026
 NonPerishable,148,Soya Chunks,80.00,20,N/A
 NonPerishable,149,Green Tea,200.00,6,N/A
 NonPerishable,150,Black Pepper,300.00,5,N/A
+Perishable,101,Milk,45.00,17,20-10-2025
+NonPerishable,102,Sugar,55.00,4,N/A
+NonPerishable,103,Tea Leaves,120.00,2,N/A
+Perishable,104,Yogurt,35.00,25,30-10-2025
+Perishable,105,Maggie,20.00,18,06-04-2026
+Perishable,106,Bread,30.00,17,10-04-2026
+Perishable,107,Butter,60.00,10,15-04-2026
+NonPerishable,108,Rice,80.00,50,N/A
+NonPerishable,109,Wheat Flour,45.00,33,N/A
+Perishable,110,Paneer,90.00,12,12-04-2026
+Perishable,111,Cheese,110.00,8,18-04-2026
+NonPerishable,112,Salt,20.00,25,N/A
+NonPerishable,113,Turmeric Powder,70.00,10,N/A
+NonPerishable,114,Chili Powder,85.00,9,N/A
+Perishable,115,Tomato,25.00,40,08-04-2026
+Perishable,116,Potato,20.00,60,20-04-2026
+Perishable,117,Onion,30.00,45,18-04-2026
+NonPerishable,118,Toor Dal,95.00,22,N/A
+NonPerishable,119,Moong Dal,100.00,18,N/A
+NonPerishable,120,Chana Dal,85.00,20,N/A
+Perishable,121,Spinach,15.00,30,07-04-2026
+Perishable,122,Cabbage,25.00,20,12-04-2026
+Perishable,123,Carrot,40.00,25,14-04-2026
+Perishable,124,Cucumber,20.00,28,09-04-2026
+NonPerishable,125,Cooking Oil,150.00,11,N/A
+NonPerishable,126,Ghee,500.00,5,N/A
+Perishable,127,Chicken,220.00,10,07-04-2026

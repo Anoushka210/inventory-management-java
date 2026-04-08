@@ -4,7 +4,7 @@
 
 ### *Java | OOP | Multithreading | File Handling*
 
-A **production-style inventory system** built using core Java concepts with real-world design patterns, concurrency handling, and persistent storage.
+A robust, multi-threaded Java console application designed to manage inventory for perishable and non-perishable goods. This project demonstrates core backend development principles including Object-Oriented Design, Concurrency, Data Persistence, and the Java Stream API.
 
 </div>
 
@@ -23,34 +23,41 @@ This project simulates a **real-world inventory system** capable of:
 
 ## 🎯 Key Features
 
-✔️ Object-Oriented Design (Abstraction, Inheritance, Polymorphism)
-✔️ Thread-safe inventory using `ConcurrentHashMap`
-✔️ Background stock monitoring with daemon threads
-✔️ Custom exception handling (`OutOfStockException`)
-✔️ Persistent storage using serialization
-✔️ Automated report generation
-
+* **Thread-Safe Architecture:** Utilizes `ConcurrentHashMap` to ensure data integrity while a background daemon thread continuously monitors stock levels.
+* **Readable Data Persistence:** Automatically saves and loads inventory state using CSV (`inventory.csv`), allowing for easy viewing in external spreadsheet software.
+* **Advanced Search & Filtering:** Implements Java Streams and Lambda expressions to provide instant, case-insensitive searching by Product ID or Name.
+* **Automated Audit Trail:** Appends real-time, timestamped sales data to a `transaction_log.txt` file for accounting and history tracking.
+* **Smart Date Handling:** Uses `java.time.LocalDate` to securely handle and format expiry dates for perishable goods.
 ---
 
 ## 🧠 System Architecture
 
 ```id="arch1"
 src/
-├── exceptions/
-├── models/
-├── storage/
-├── core/
-└── SmartInventorySystem.java
+ ├── core/                  # Core business logic and background threads
+ │    ├── InventoryManager.java
+ │    └── StockMonitorThread.java
+ ├── exceptions/            # Custom error handling
+ │    └── OutOfStockException.java
+ ├── models/                # Data structures and OOP hierarchy
+ │    ├── Product.java (Abstract)
+ │    ├── PerishableProduct.java
+ │    └── NonPerishableProduct.java
+ ├── storage/               # File I/O operations
+ │    ├── FileHandler.java (Interface)
+ │    └── FileManager.java
+ └── SmartInventorySystem.java  # Main entry point and user interface
 ```
 
 ---
 
 ## 🔧 Tech Stack
 
-* **Language:** Java
-* **Concepts:** OOP, Multithreading, Collections
+* **Language:** Java (JDK 8+)
+* **Concepts:** Multithreading, Polymorphism, Interfaces, Exception Handling
 * **Storage:** File Handling (Serialization)
 * **Concurrency:** `ConcurrentHashMap`, `synchronized`
+* **APIs:** Stream API, java.time (Date/Time API), java.io (File I/O)
 
 ---
 
@@ -211,12 +218,6 @@ java SmartInventorySystem
 * Build **REST API (Spring Boot)**
 * Add **frontend dashboard (React)**
 * Implement **authentication & user roles**
-
----
-
-## Activity
-
-![Last Commit](https://img.shields.io/github/last-commit/Anoushka210/inventory-management-java)
 
 ---
 

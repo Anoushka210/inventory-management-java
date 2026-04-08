@@ -4,9 +4,11 @@
 # Log files
 *.log
 
-# Project-specific local data (Don't track test data!)
+# Project-specific local data (Do not track test data!)
+inventory.dat
 inventory.csv
 report.txt
+transaction_log.txt
 
 # IntelliJ IDEA
 .idea/
