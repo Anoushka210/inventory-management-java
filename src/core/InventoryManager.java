@@ -154,4 +154,25 @@ public class InventoryManager {
     public List<Product> getProductList() {
         return new ArrayList<>(inventoryMap.values());
     }
+
+    public void searchProducts(String keyword) {
+        System.out.println("\n--- Search Results for: '" + keyword + "' ---");
+        
+        // Convert to lowercase so searching for "milk" finds "Milk"
+        String searchTarget = keyword.toLowerCase();
+
+        List<Product> results = inventoryMap.values().stream()
+                .filter(p -> p.getName().toLowerCase().contains(searchTarget) || 
+                             String.valueOf(p.getId()).contains(searchTarget))
+                .toList();
+
+        if (results.isEmpty()) {
+            System.out.println(" No products found matching that keyword.");
+        } else {
+            System.out.printf("%-6s %-20s %-11s %-10s %-14s %s\n",
+                    "ID", "Name", "Price (₹)", "Quantity", "Type", "Extra Info");
+            System.out.println("-------------------------------------------------------------");
+            results.forEach(Product::displayInfo);
+        }
+    }
 }
