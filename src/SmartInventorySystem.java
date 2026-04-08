@@ -24,11 +24,12 @@ public class SmartInventorySystem {
             System.out.println("What would you like to do next?");
             System.out.println("1. Add Product");
             System.out.println("2. View All Products");
-            System.out.println("3. Sell Product");
-            System.out.println("4. Restock Product");
-            System.out.println("5. View Low Stock Items");
-            System.out.println("6. Generate Report");
-            System.out.println("7. Save & Exit");
+            System.out.println("3. Search Products"); // <--- NEW
+            System.out.println("4. Sell Product");
+            System.out.println("5. Restock Product");
+            System.out.println("6. View Low Stock Items");
+            System.out.println("7. Generate Report");
+            System.out.println("8. Save & Exit");     // <--- MOVED TO 8
             System.out.println("----------------------------------------");
             System.out.print("Enter your choice: ");
 
@@ -39,11 +40,16 @@ public class SmartInventorySystem {
                 switch (choice) {
                     case 1 -> addProductMenu(scanner, manager);
                     case 2 -> manager.showAllProducts();
-                    case 3 -> sellProductMenu(scanner, manager);
-                    case 4 -> restockProductMenu(scanner, manager);
-                    case 5 -> manager.checkLowStock();
-                    case 6 -> manager.generateReport();
-                    case 7 -> {
+                    case 3 -> { // <--- NEW SEARCH CASE
+                        System.out.print("Enter product name or ID to search: ");
+                        String keyword = scanner.nextLine();
+                        manager.searchProducts(keyword);
+                    }
+                    case 4 -> sellProductMenu(scanner, manager);
+                    case 5 -> restockProductMenu(scanner, manager);
+                    case 6 -> manager.checkLowStock();
+                    case 7 -> manager.generateReport();
+                    case 8 -> { // <--- UPDATED TO 8
                         manager.saveInventory();
                         monitor.stopMonitoring();
                         exit = true;
