@@ -1,19 +1,20 @@
-package core;
+package com.inventory.core;
 
-import exceptions.OutOfStockException;
-import models.NonPerishableProduct;
-import models.PerishableProduct;
-import models.Product;
-import storage.FileManager;
+import com.inventory.exceptions.OutOfStockException;
+import com.inventory.models.NonPerishableProduct;
+import com.inventory.models.PerishableProduct;
+import com.inventory.models.Product;
+import com.inventory.storage.FileManager;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 public class InventoryManager {
     private Map<Integer, Product> inventoryMap;

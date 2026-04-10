@@ -1,8 +1,9 @@
-package storage;
+package com.inventory.storage;
 
-import models.NonPerishableProduct;
-import models.PerishableProduct;
-import models.Product;
+import com.inventory.models.NonPerishableProduct;
+import com.inventory.models.PerishableProduct;
+import com.inventory.models.Product;
+import org.springframework.stereotype.Component;
 
 import java.io.*;
 import java.time.format.DateTimeFormatter;

@@ -1,4 +1,4 @@
-package models;
+package com.inventory.models;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;

@@ -1,4 +1,4 @@
-package core;
+package com.inventory.core;
 
 public class StockMonitorThread extends Thread {
     private InventoryManager inventory;

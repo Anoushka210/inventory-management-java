@@ -1,8 +1,8 @@
-import core.InventoryManager;
-import core.StockMonitorThread;
-import exceptions.OutOfStockException;
-import models.NonPerishableProduct;
-import models.PerishableProduct;
+import com.inventory.core.InventoryManager;
+import com.inventory.core.StockMonitorThread;
+import com.inventory.exceptions.OutOfStockException;
+import com.inventory.models.NonPerishableProduct;
+import com.inventory.models.PerishableProduct;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package models;
+package com.inventory.models;
 
 public class NonPerishableProduct extends Product {
     private String warranty;
