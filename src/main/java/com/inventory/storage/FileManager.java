@@ -9,6 +9,7 @@ import java.io.*;
 import java.time.format.DateTimeFormatter;
 import java.util.Map;
 
+@Component
 public class FileManager implements FileHandler {
     private Map<Integer, Product> inventoryMap;
     // Changed from .dat to .csv

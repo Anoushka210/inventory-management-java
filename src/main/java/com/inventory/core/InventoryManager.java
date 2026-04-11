@@ -16,15 +16,19 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+@Service
 public class InventoryManager {
     private Map<Integer, Product> inventoryMap;
     private double totalSales;
     private FileManager fileManager;
 
-    public InventoryManager() {
+    @Autowired
+    public InventoryManager(FileManager fileManager) {
+        this.fileManager = fileManager; 
         this.inventoryMap = new ConcurrentHashMap<>();
         this.totalSales = 0.0;
-        this.fileManager = new FileManager(inventoryMap);
+        
+        loadInventoryOrInitialize();
     }
 
     public void loadInventoryOrInitialize() {
