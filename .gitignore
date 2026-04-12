@@ -38,4 +38,10 @@ bin/
 ehthumbs.db
 Thumbs.db
 
+# Maven compiled output
 target/
+*.jar
+*.war
+
+# Spring Boot specific
+.mvn/
