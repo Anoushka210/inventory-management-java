@@ -1,27 +1,4 @@
 Type,ID,Name,Price,Quantity,ExtraInfo
-Perishable,128,Eggs,6.00,120,15-04-2026
-Perishable,129,Apple,120.00,30,16-04-2026
-Perishable,130,Banana,50.00,35,10-04-2026
-Perishable,131,Orange,80.00,25,14-04-2026
-Perishable,132,Grapes,90.00,20,13-04-2026
-NonPerishable,133,Biscuits,25.00,40,N/A
-NonPerishable,134,Chips,20.00,50,N/A
-NonPerishable,135,Soft Drink,40.00,30,N/A
-NonPerishable,136,Instant Coffee,180.00,10,N/A
-NonPerishable,137,Jam,140.00,8,N/A
-NonPerishable,138,Peanut Butter,160.00,7,N/A
-Perishable,139,Ice Cream,200.00,12,25-04-2026
-Perishable,140,Fish,250.00,9,08-04-2026
-NonPerishable,141,Pasta,70.00,20,N/A
-NonPerishable,142,Noodles,40.00,25,N/A
-NonPerishable,143,Cornflakes,120.00,15,N/A
-NonPerishable,144,Oats,110.00,18,N/A
-Perishable,145,Mushroom,60.00,14,09-04-2026
-Perishable,146,Strawberry,150.00,10,11-04-2026
-Perishable,147,Pineapple,90.00,8,13-04-2026
-NonPerishable,148,Soya Chunks,80.00,20,N/A
-NonPerishable,149,Green Tea,200.00,6,N/A
-NonPerishable,150,Black Pepper,300.00,5,N/A
 Perishable,101,Milk,45.00,17,20-10-2025
 NonPerishable,102,Sugar,55.00,4,N/A
 NonPerishable,103,Tea Leaves,120.00,2,N/A
@@ -49,3 +26,26 @@ Perishable,124,Cucumber,20.00,28,09-04-2026
 NonPerishable,125,Cooking Oil,150.00,11,N/A
 NonPerishable,126,Ghee,500.00,5,N/A
 Perishable,127,Chicken,220.00,10,07-04-2026
+Perishable,128,Eggs,6.00,120,15-04-2026
+Perishable,129,Apple,120.00,30,16-04-2026
+Perishable,130,Banana,50.00,35,10-04-2026
+Perishable,131,Orange,80.00,25,14-04-2026
+Perishable,132,Grapes,90.00,20,13-04-2026
+NonPerishable,133,Biscuits,25.00,40,N/A
+NonPerishable,134,Chips,20.00,50,N/A
+NonPerishable,135,Soft Drink,40.00,30,N/A
+NonPerishable,136,Instant Coffee,180.00,10,N/A
+NonPerishable,137,Jam,140.00,8,N/A
+NonPerishable,138,Peanut Butter,160.00,7,N/A
+Perishable,139,Ice Cream,200.00,12,25-04-2026
+Perishable,140,Fish,250.00,9,08-04-2026
+NonPerishable,141,Pasta,70.00,20,N/A
+NonPerishable,142,Noodles,40.00,25,N/A
+NonPerishable,143,Cornflakes,120.00,15,N/A
+NonPerishable,144,Oats,110.00,18,N/A
+Perishable,145,Mushroom,60.00,14,09-04-2026
+Perishable,146,Strawberry,150.00,10,11-04-2026
+Perishable,147,Pineapple,90.00,8,13-04-2026
+NonPerishable,148,Soya Chunks,80.00,20,N/A
+NonPerishable,149,Green Tea,200.00,6,N/A
+NonPerishable,150,Black Pepper,300.00,5,N/A
